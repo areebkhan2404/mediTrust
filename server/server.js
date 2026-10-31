@@ -23,7 +23,7 @@ const app = express()
 
 // DB CONNECTION 
 
-connectDB()
+connectDB() 
 
 // Body-parser
 app.use(express.json())

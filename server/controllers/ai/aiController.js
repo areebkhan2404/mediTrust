@@ -50,7 +50,7 @@ const explainPrescription = async (req, res) => {
         const base64 = fileToBase64(req.file.path);
 
         const response = await ai.models.generateContent({
-            model: "gemini-3.6-flash",
+            model: "gemini-3.8-flash",
             contents: [
                 {
                     role: "user",
@@ -180,7 +180,7 @@ Here is the data: ${{ products, pathologists, medicines: prescription.medicines 
     try {
 
         const response = await ai.models.generateContent({
-            model: "gemini-3.6-flash",
+            model: "gemini-3.8-flash",
             contents: [
                 {
                     role: "user",
@@ -245,7 +245,7 @@ User's question: ${text}
 
     try {
         const response = await ai.models.generateContent({
-            model: "gemini-3.6-flash",
+            model: "gemini-3.8-flash",
             contents: [
                 {
                     role: "user",
